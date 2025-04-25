@@ -2,7 +2,7 @@ import os
 import shutil
 Pedir_caminho = input("Copie e cole o endereço da pasta: ")
 downloads = os.path.join(Pedir_caminho)
-destino = os.path.join(downloads, "PDFs")
+destinos = destino = os.path.join(downloads, "PDFs")
 destino2 = os.path.join(downloads, "Webp")
 destino3 = os.path.join(downloads, "PNGs")
 destino4 = os.path.join(downloads, "Mp3s")
@@ -14,18 +14,13 @@ destino9 = os.path.join(downloads, "Compactados")
 destino10 = os.path.join(downloads, "Vídeos")
 destino11 = os.path.join(downloads, "Outros")
 
-os.makedirs(destino, exist_ok=True)
-os.makedirs(destino2, exist_ok=True)
-os.makedirs(destino3, exist_ok=True)
-os.makedirs(destino4, exist_ok=True)
-os.makedirs(destino5, exist_ok=True)
-os.makedirs(destino6, exist_ok=True)
-os.makedirs(destino7, exist_ok=True)
-os.makedirs(destino8, exist_ok=True)
-os.makedirs(destino9, exist_ok=True)
-os.makedirs(destino10, exist_ok=True)
-os.makedirs(destino11, exist_ok=True)
+destinos = (
+    destino, destino2, destino3, destino4, destino5, 
+    destino6, destino7, destino8, destino9, destino10, destino11
+)
 
+for destino in destinos:
+    os.makedirs(destino, exist_ok=True)
 
 
 
