@@ -13,4 +13,3 @@ Compatível com Windows, Linux e MacOS
 🛠️ Tecnologias usadas
 Python 3.x
 
-Módulos nativos: os, shutil, datetime
